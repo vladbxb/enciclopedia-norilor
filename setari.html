@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Setări</title>
+    <link rel="stylesheet" href="style_settings.css">
+    <script src="settings.js" defer></script>
+</head>
+<body class="body-main">
+
+    <audio autoplay loop>
+        <source src="mysterious-cave-190416.mp3" type="audio/mpeg">
+    </audio>
+    <div class="clouds-background">
+        <img class="cloud cloud1" src="cloud1.png" alt="cloud1">
+        <img class="cloud cloud2" src="cloud2.png" alt="cloud2">
+        <img class="cloud cloud3" src="cloud3.png" alt="cloud3">
+        <img class="cloud cloud4" src="cloud4.png" alt="cloud4">
+        <img class="cloud cloud5" src="cloud5.png" alt="cloud5">
+    </div>
+
+    <div class="back">
+        <a href="index.html">Inapoi</a>
+    </div>
+
+    <div class="cloud-box" style="display: flex; height: 100vh;">
+        <aside class="sidebar">
+            <ul>
+                <li><button data-section="general-section">General</button></li>
+                <li><button data-section="appearance-section">Apariție</button></li>
+                <li><button data-section="audio-section">Audio</button></li>
+            </ul>
+        </aside>
+        <div id="settings-content" class="sidebar" style="flex: 1; margin-left: 20px; padding: 20px;">
+            <h2>Bine ai venit!</h2>
+            <p>Selectează o categorie din stânga pentru a schimba setările.</p>
+        </div>
+    </div>
+</body>
+</html>
