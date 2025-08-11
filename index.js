@@ -75,7 +75,7 @@ window.onload = function() {
     function setTimeOfDay(time) {
         if (time === 'day') {
             globalTime = 'day';
-            timeIcon.src = 'sun.png';
+            timeIcon.src = 'assets/images/sun.png';
             document.body.style.background = "radial-gradient(circle at bottom, #96e5ff 50%, #40a6ff 100%)";
             document.body.style.backgroundAttachment = "fixed";
             document.body.style.backgroundSize = "cover";
@@ -94,7 +94,7 @@ window.onload = function() {
         else
         {
             globalTime = 'night';
-            timeIcon.src = 'moon.png';
+            timeIcon.src = 'assets/images/moon.png';
             document.body.style.background = "radial-gradient(circle at bottom, #34495E 50%, #1C1F4A 100%)";
             document.body.style.backgroundAttachment = "fixed";
             document.body.style.backgroundSize = "cover";
@@ -125,7 +125,7 @@ window.onload = function() {
     function togglePageVisibility() {
         if (visibility === 'shown') {
             visibility = 'hidden';
-            pageIcon.src = 'file_crossed.png';
+            pageIcon.src = 'assets/images/file_crossed.png';
             const elements = document.querySelectorAll('.clouds-background ~ *');
 
             elements.forEach(element => {
@@ -138,7 +138,7 @@ window.onload = function() {
         else 
         {
             visibility = 'shown';
-            pageIcon.src = 'file.png';
+            pageIcon.src = 'assets/images/file.png';
             const elements = document.querySelectorAll('.clouds-background ~ *');
 
             elements.forEach(element => {
@@ -154,9 +154,9 @@ window.onload = function() {
         if (music === 'unmuted') {
             music = 'muted';
             if (musicIcon)
-                musicIcon.src = 'musical-note-muted.png';
+                musicIcon.src = 'assets/images/musical-note-muted.png';
             if (musicIconGalerie)
-                musicIconGalerie.src = 'musical-note-muted.png';
+                musicIconGalerie.src = 'assets/images/musical-note-muted.png';
 
             const audioElement = document.querySelector('audio');
             audioElement.muted = true;
@@ -165,9 +165,9 @@ window.onload = function() {
         {
             music = 'unmuted';
             if (musicIcon)
-                musicIcon.src = 'musical-note.png';
+                musicIcon.src = 'assets/images/musical-note.png';
             if (musicIconGalerie)
-                musicIconGalerie.src = 'musical-note.png';
+                musicIconGalerie.src = 'assets/images/musical-note.png';
 
             const audioElement = document.querySelector('audio');
             audioElement.muted = false;
@@ -192,7 +192,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const favoriteSection = document.createElement('div');
     favoriteSection.id = 'favorite-section';
     favoriteSection.innerHTML = `
-        <img src="red-needle-pin.png" alt="red pushpin">
+        <img src="assets/images/red-needle-pin.png" alt="red pushpin">
         <div class="heading-container">
             <h1>Favorite</h1>
         </div>

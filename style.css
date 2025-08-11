@@ -154,7 +154,7 @@ article h2 {
 }
 
 .wooden-background {
-    background: url(wooden_plank-removebg-preview2_upscayl_4x_realesrgan-x4plus-anime.png);
+    background: url(assets/images/wooden_plank-removebg-preview2_upscayl_4x_realesrgan-x4plus-anime.png);
     /* background-attachment: fixed; */
     background-size: auto;
     background-position: center;
@@ -684,7 +684,7 @@ em {
     flex-direction: column;
     /* align-items: center; */
     /* justify-content: center; */
-    background: url(corkboard.jpg);
+    background: url(assets/images/corkboard.jpg);
     background-size: cover;
     background-repeat: repeat-y;
     /* overflow: hidden;
